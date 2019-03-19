@@ -23,7 +23,9 @@ describe('driverStandings()', () => {
   context('when API is available', () => {
     let standings;
     before(() => mock.onGet(uri).reply(200, successfulResponse));
-    beforeEach(async () => { standings = await driverStandings() });
+    beforeEach(async () => {
+      standings = await driverStandings();
+    });
 
     it('Return an object', () => {
       expect(standings).to.be.an('object');

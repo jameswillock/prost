@@ -183,6 +183,6 @@ const standings = {
   ],
   season: '2019',
   round: 1
-}
+};
 
 module.exports = standings;
