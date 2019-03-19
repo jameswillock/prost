@@ -15,7 +15,7 @@
 ## Description
 Fetch and display the current Formula 1 driver standings.
 
-<img src="screenshot.png" width="818">
+<img src="screenshot.png" width="671">
 
 ## Installation
 Prost is available via `npm` – merely `npm install -g prost`.
