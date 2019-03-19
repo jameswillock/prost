@@ -11,7 +11,7 @@
     "formula-1"
   ],
   "author": "James Willock",
-  "license": "ISC",
+  "license": "MIT",
   "preferGlobal": true,
   "bin": {
     "prost": "./index.js"

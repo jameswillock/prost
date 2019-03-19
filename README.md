@@ -10,7 +10,8 @@
 “I’m not going to leave him even a 1-meter gap.”
 ```
 
-[![CircleCI](https://circleci.com/gh/jameswillock/prost.svg?style=svg)](https://circleci.com/gh/jameswillock/prost)
+[![CircleCI](https://img.shields.io/circleci/project/github/jameswillock/prost/master.svg)](https://circleci.com/gh/jameswillock/prost)
+
 
 ## Description
 Fetch and display the current Formula 1 driver standings.
