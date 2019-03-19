@@ -15,10 +15,14 @@
 ## Description
 Fetch and display the current Formula 1 driver standings.
 
-<img src="screenshot.png" width="409" height="671">
+<img src="screenshot.png" width="818">
 
 ## Installation
-Merely `npm install -g prost`, and then run `prost` whenever you want to see the current season’s driver standings.
+Prost is available via `npm` – merely `npm install -g prost`.
+
+The `-c` flag will fetch and return constructor standings.
+
+The `-d` flag (default) will fetch and return driver standings.
 
 ## Credits
 - [Ergast Developer API](https://ergast.com/mrd/) – Motor Racing Developer API.
@@ -27,5 +31,4 @@ Merely `npm install -g prost`, and then run `prost` whenever you want to see the
 
 ## Drawbacks
 - Does not support previous rounds or seasons.
-- Does not support constructor standings.
 - No caching, so will make an API request on every run.
