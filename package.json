@@ -4,6 +4,7 @@
   "description": "Formula 1 statistics on the command line",
   "main": "index.js",
   "scripts": {
+    "prost": "./index.js",
     "test": "mocha --recursive test"
   },
   "keywords": [
@@ -11,6 +12,10 @@
   ],
   "author": "James Willock",
   "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "prost": "./index.js"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "cli-table3": "^0.5.1"

@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const driverStandings = require('./lib/driverStandings');
 const driverTable = require('./lib/driverTable');
 
