@@ -6,6 +6,8 @@
   \ \ \/\ \ \//\ \L\ \/\__, `\\ \ \_
    \ \_\ \ \_\\ \____/\/\____/ \ \__\
     \/_/  \/_/ \/___/  \/___/   \/__/
+
+“I’m not going to leave him even a 1-meter gap.”
 ```
 
 [![CircleCI](https://circleci.com/gh/jameswillock/prost.svg?style=svg)](https://circleci.com/gh/jameswillock/prost)
@@ -13,8 +15,7 @@
 ## Description
 Fetch and display the current Formula 1 driver standings.
 
-![Prost output](screenshot.png)
-
+<img src="screenshot.png" width="409" height="671">
 
 ## Credits
 - [Ergast Developer API](https://ergast.com/mrd/) – Motor Racing Developer API.
