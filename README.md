@@ -10,7 +10,7 @@
 “I’m not going to leave him even a 1-meter gap.”
 ```
 
-[![CircleCI](https://img.shields.io/circleci/project/github/jameswillock/prost/master.svg)](https://circleci.com/gh/jameswillock/prost) [![Version](https://img.shields.io/npm/v/prost.svg)](https://www.npmjs.com/package/prost) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Maintainability](https://api.codeclimate.com/v1/badges/b687ee4cb4f2156fdd91/maintainability)](https://codeclimate.com/github/jameswillock/prost/maintainability)
+[![CircleCI](https://img.shields.io/circleci/project/github/jameswillock/prost/master.svg)](https://circleci.com/gh/jameswillock/prost) [![Version](https://img.shields.io/npm/v/prost.svg)](https://www.npmjs.com/package/prost) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Test Coverage](https://api.codeclimate.com/v1/badges/b687ee4cb4f2156fdd91/test_coverage)](https://codeclimate.com/github/jameswillock/prost/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/b687ee4cb4f2156fdd91/maintainability)](https://codeclimate.com/github/jameswillock/prost/maintainability)
 
 ## Description
 Fetch and display the current Formula 1 driver standings.
