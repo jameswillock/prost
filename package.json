@@ -1,0 +1,24 @@
+{
+  "name": "prost",
+  "version": "0.0.1",
+  "description": "Formula 1 statistics on the command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive test"
+  },
+  "keywords": [
+    "formula-1"
+  ],
+  "author": "James Willock",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cli-table3": "^0.5.1"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.16.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.0.2"
+  }
+}
