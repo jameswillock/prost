@@ -4,7 +4,7 @@ const chai = require('chai');
 const expect = chai.expect;
 chai.use(require('chai-as-promised'));
 
-const standings = require('../mocks/standings');
+const standings = require('../mocks/driverStandings/standings');
 
 describe('driverTable()', () => {
   let table;

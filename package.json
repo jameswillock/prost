@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "cli-table3": "^0.5.1"
+    "cli-table3": "^0.5.1",
+    "commander": "^2.19.0"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.16.0",

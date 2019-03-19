@@ -1,10 +1,23 @@
 #! /usr/bin/env node
 
+const constructorStandings = require('./lib/constructorStandings');
+const constructorTable = require('./lib/constructorTable');
 const driverStandings = require('./lib/driverStandings');
 const driverTable = require('./lib/driverTable');
+const program = require('commander');
 
-(async () => {
-  const standings = await driverStandings();
-  const table = driverTable(standings);
-  console.log(table);
+program
+  .version('0.0.1')
+  .option('-d, --drivers', 'Driver standings')
+  .option('-c, --constructors', 'Constructor standings')
+  .parse(process.argv);
+  
+(async () => {  
+  if (program.drivers || (!program.drivers && !program.constructors)) {
+    console.log(driverTable(await driverStandings()));
+  }
+
+  if (program.constructors) {
+    console.log(constructorTable(await constructorStandings()));
+  }
 })();

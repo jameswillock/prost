@@ -1,32 +1,34 @@
-const driverStandings = require('../../lib/driverStandings');
+const constructorStandings = require('../../lib/constructorStandings');
 const axios = require('../../lib/axios');
 const MockAdapter = require('axios-mock-adapter');
 const chai = require('chai');
 const expect = chai.expect;
 chai.use(require('chai-as-promised'));
-const successfulResponse = require('../mocks/driverStandings/successfulResponse');
+const successfulResponse = require('../mocks/constructorStandings/successfulResponse');
 
-describe('driverStandings()', () => {
+describe('constructorStandings()', () => {
   let mock;
   before(() => mock = new MockAdapter(axios));
   after(() => mock.restore());
-
+  
   context('when API is unavailable', () => {
-    before(() => mock.onGet('driverstandings.json').reply(500, 'Error'));
+    before(() => {
+      mock.onGet('constructorstandings.json').reply(500, 'Error');
+    });
     
     it('Throws an error', async () => {
-      await expect(driverStandings()).to.be.rejectedWith(
+      await expect(constructorStandings()).to.be.rejectedWith(
         'Could not fetch standings: Error: Request failed with status code 500'
       );
     });
   });
-
+  
   context('when API is available', () => {
     let standings;
 
     before(async () => {
-      mock.onGet('driverstandings.json').reply(200, successfulResponse);
-      standings = await driverStandings();
+      mock.onGet('constructorstandings.json').reply(200, successfulResponse);
+      standings = await constructorStandings();
     });
 
     it('Return an object', () => {
@@ -48,8 +50,7 @@ describe('driverStandings()', () => {
     it('Returns a table with the correct keys', () => {
       standings.table.forEach(standing => {
         expect(standing).to.have.keys([
-          'givenName', 'familyName', 'position', 'points',
-          'wins', 'nationality', 'constructor'
+          'position', 'points', 'wins', 'constructor', 'nationality'
         ]);
       });
     });
@@ -57,12 +58,10 @@ describe('driverStandings()', () => {
     it('Returns the table with the correct values', () => {
       const standing = standings.table[0];
 
-      expect(standing.givenName).to.eq('Valtteri');
-      expect(standing.familyName).to.eq('Bottas');
       expect(standing.position).to.eq(1);
-      expect(standing.points).to.eq(26);
+      expect(standing.points).to.eq(44);
       expect(standing.wins).to.eq(1);
-      expect(standing.nationality).to.eq('Finnish');
+      expect(standing.nationality).to.eq('German');
       expect(standing.constructor).to.eq('Mercedes');
     });
   });
