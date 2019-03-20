@@ -10,7 +10,7 @@
 “I’m not going to leave him even a 1-meter gap.”
 ```
 
-[![CircleCI](https://img.shields.io/circleci/project/github/jameswillock/prost/master.svg)](https://circleci.com/gh/jameswillock/prost) [![Version](https://img.shields.io/npm/v/prost.svg)](https://www.npmjs.com/package/prost) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Test Coverage](https://img.shields.io/codeclimate/coverage/jameswillock/prost.svg)](https://codeclimate.com/github/jameswillock/prost/test_coverage) [![Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/jameswillock/prost.svg)](https://codeclimate.com/github/jameswillock/prost/maintainability)
+[![CircleCI](https://img.shields.io/circleci/project/github/jameswillock/prost/master.svg)](https://circleci.com/gh/jameswillock/prost) [![Version](https://img.shields.io/npm/v/prost.svg)](https://www.npmjs.com/package/prost) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Test Coverage](https://img.shields.io/codeclimate/coverage/jameswillock/prost.svg)](https://codeclimate.com/github/jameswillock/prost/test_coverage) [![Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/jameswillock/prost.svg)](https://codeclimate.com/github/jameswillock/prost/maintainability) [![Depfu](https://img.shields.io/depfu/jameswillock/prost.svg)](https://depfu.com/github/jameswillock/prost?project_id=7502)
 
 ## Description
 Fetch and display the current Formula 1 driver standings.
