@@ -31,4 +31,3 @@ The `-d` flag (default) will fetch and return driver standings.
 
 ## Drawbacks
 - Does not support previous rounds or seasons.
-- No caching, so will make an API request on every run.
