@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "cache-manager": "^2.9.0",
+    "cache-manager-fs-hash": "0.0.7",
     "cli-table3": "^0.5.1",
     "commander": "^2.19.0"
   },
