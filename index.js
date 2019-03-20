@@ -12,7 +12,7 @@ program
   .option('-c, --constructors', 'Constructor standings')
   .parse(process.argv);
   
-(async () => {  
+(async () => {
   if (program.drivers || (!program.drivers && !program.constructors)) {
     console.log(driverTable(await driverStandings()));
   }

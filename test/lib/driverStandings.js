@@ -16,7 +16,7 @@ describe('driverStandings()', () => {
     
     it('Throws an error', async () => {
       await expect(driverStandings()).to.be.rejectedWith(
-        'Could not fetch standings: Error: Request failed with status code 500'
+        'Request failed with status code 500'
       );
     });
   });
