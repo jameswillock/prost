@@ -6,7 +6,7 @@ chai.use(require('chai-as-promised'));
 
 const standings = require('../mocks/constructorStandings/standings');
 
-describe('driverTable()', () => {
+describe('constructorTable()', () => {
   let table;
 
   before(() => table = driverTable(standings));
