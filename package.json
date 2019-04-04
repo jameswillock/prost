@@ -21,7 +21,7 @@
     "cache-manager": "^2.9.0",
     "cache-manager-fs-hash": "0.0.7",
     "cli-table3": "^0.5.1",
-    "commander": "^2.19.0"
+    "commander": "^2.20.0"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.16.0",
