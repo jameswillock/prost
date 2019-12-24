@@ -3,9 +3,11 @@ const chai = require('chai');
 const expect = chai.expect;
 const sinon = require('sinon');
 chai.use(require('chai-as-promised'));
+const testMode = process.env.TEST_MODE;
 
 describe('cache()', () => {
-  
+  after(() => process.env.TEST_MODE = testMode);
+
   context('When test mode is enabled', () => {
     before(() => process.env.TEST_MODE = 'true');
     it('Calls the underlying function', async () => {
