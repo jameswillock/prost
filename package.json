@@ -24,7 +24,7 @@
     "commander": "^2.20.0"
   },
   "devDependencies": {
-    "axios-mock-adapter": "^1.16.0",
+    "axios-mock-adapter": "^1.17.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^5.16.0",
