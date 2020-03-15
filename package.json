@@ -17,20 +17,20 @@
     "prost": "./index.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "cache-manager": "^2.10.1",
+    "axios": "^0.19.2",
+    "cache-manager": "^3.2.0",
     "cache-manager-fs-hash": "0.0.7",
     "cli-table3": "^0.5.1",
-    "commander": "^2.20.3"
+    "commander": "^5.0.0"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.17.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^5.16.0",
-    "mocha": "^6.2.2",
+    "eslint": "^6.8.0",
+    "mocha": "^7.1.0",
     "nyc": "^15.0.0",
-    "sinon": "^7.5.0"
+    "sinon": "^9.0.1"
   },
   "repository": {
     "type": "git",
