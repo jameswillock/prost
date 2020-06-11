@@ -1,0 +1,29 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  test:
+    name: Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+    env:
+      TEST_MODE: true
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [10.x, 12.x, 14.x]
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install npm dependencies
+      run: npm ci
+    - name: Lint
+      run: npm run eslint
+    - name: Run tests, check code coverage
+      run: ./node_modules/.bin/nyc --reporter=clover --cache=false npm test
+    - name: Upload code coverage
+      uses: codecov/codecov-action@v1
+      with:
+        file: ./coverage/clover.xml

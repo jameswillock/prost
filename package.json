@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prost": "./index.js",
-    "test": "mocha --recursive test"
+    "test": "mocha --recursive test",
+    "eslint": "eslint ./ --format table"
   },
   "keywords": [
     "formula-1"
@@ -28,7 +29,7 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^7.2.0",
-    "mocha": "^7.2.0",
+    "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "sinon": "^9.0.2"
   },

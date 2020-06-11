@@ -10,7 +10,8 @@
 “I’m not going to leave him even a 1-meter gap.”
 ```
 
-![Tests](https://github.com/jameswillock/prost/workflows/Tests/badge.svg) [![Version](https://img.shields.io/npm/v/prost.svg)](https://www.npmjs.com/package/prost) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Test Coverage](https://img.shields.io/codeclimate/coverage/jameswillock/prost.svg)](https://codeclimate.com/github/jameswillock/prost/test_coverage) [![Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/jameswillock/prost.svg)](https://codeclimate.com/github/jameswillock/prost/maintainability) [![Depfu](https://badges.depfu.com/badges/b497d8be1cc358217997d2a3624ba0ae/overview.svg)](https://depfu.com/github/jameswillock/prost?project_id=7502)
+![Tests](https://github.com/jameswillock/prost/workflows/Tests/badge.svg) [![Version](https://img.shields.io/npm/v/prost.svg)](https://www.npmjs.com/package/prost) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Depfu](https://badges.depfu.com/badges/b497d8be1cc358217997d2a3624ba0ae/overview.svg)](https://depfu.com/github/jameswillock/prost?project_id=7502) [![codecov](https://codecov.io/gh/jameswillock/prost/branch/master/graph/badge.svg)](https://codecov.io/gh/jameswillock/prost)
+
 ## Description
 Fetch and display the current Formula 1 driver standings on the command line.
 
