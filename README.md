@@ -96,7 +96,9 @@ Example constructors' championship output:
 ```
 
 ## Installation
-Prost is available via `npm` – merely `npm install -g prost`.
+You can download a binary from the [releases section](https://github.com/jameswillock/prost/releases) for macOS, Linux or Windows.
+
+Alternatively, Prost is available via `npm` – merely `npm install -g prost`.
 
 The `-c` flag will fetch and return constructor standings.
 
