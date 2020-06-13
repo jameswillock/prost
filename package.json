@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "cache-manager": "^3.3.0",
-    "cache-manager-fs-hash": "^0.0.8",
+    "cache-manager-fs-hash": "0.0.9",
     "cli-table3": "^0.6.0",
     "commander": "^5.1.0"
   },
