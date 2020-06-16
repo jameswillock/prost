@@ -5,24 +5,12 @@
     "es6": true,
     "mocha": true
   },
-  "extends": "eslint:recommended",
+  "plugins": ["prettier"],
+  "extends": ["plugin:prettier/recommended"],
   "parserOptions": {
-    "ecmaVersion": 2017
+    "ecmaVersion": 2019
   },
   "rules": {
-    "indent": [
-      "error",
-      2
-    ],
-    "linebreak-style": 0,
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "no-console": "off"
+    "prettier/prettier": "error"
   }
 }

@@ -13,6 +13,7 @@
 ![Tests](https://github.com/jameswillock/prost/workflows/Tests/badge.svg) [![Version](https://img.shields.io/npm/v/prost.svg)](https://www.npmjs.com/package/prost) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Depfu](https://badges.depfu.com/badges/b497d8be1cc358217997d2a3624ba0ae/overview.svg)](https://depfu.com/github/jameswillock/prost?project_id=7502) [![codecov](https://codecov.io/gh/jameswillock/prost/branch/master/graph/badge.svg)](https://codecov.io/gh/jameswillock/prost)
 
 ## Description
+
 Fetch and display the current Formula 1 driver standings on the command line.
 
 Example drivers' championship output:
@@ -96,6 +97,7 @@ Example constructors' championship output:
 ```
 
 ## Installation
+
 You can download a binary from the [releases section](https://github.com/jameswillock/prost/releases) for macOS, Linux or Windows.
 
 Alternatively, Prost is available via `npm` – merely `npm install -g prost`.
@@ -105,6 +107,7 @@ The `-c` flag will fetch and return constructor standings.
 The `-d` flag (default) will fetch and return driver standings.
 
 ## Credits
+
 - [Ergast Developer API](https://ergast.com/mrd/): Motor Racing Developer API.
 - [`axios`](https://github.com/axios/axios): HTTP client.
 - [`cli-table3`](https://github.com/cli-table/cli-table3): Unicode tables for the command line.
@@ -112,4 +115,5 @@ The `-d` flag (default) will fetch and return driver standings.
 - [`cache-manager`](https://github.com/BryanDonovan/node-cache-manager): Caching backend.
 
 ## Drawbacks
+
 - Does not support previous rounds or seasons.
