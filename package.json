@@ -23,13 +23,13 @@
     "cache-manager": "^3.3.0",
     "cache-manager-fs-hash": "0.0.9",
     "cli-table3": "^0.6.0",
-    "commander": "^5.1.0"
+    "commander": "^6.0.0"
   },
   "devDependencies": {
-    "axios-mock-adapter": "^1.18.1",
+    "axios-mock-adapter": "^1.18.2",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "mocha": "^8.0.1",
