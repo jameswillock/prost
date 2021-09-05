@@ -19,7 +19,7 @@
     "prost": "./index.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.3",
     "cache-manager": "^3.4.3",
     "cache-manager-fs-hash": "0.0.9",
     "cli-table3": "^0.6.0",
