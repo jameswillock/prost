@@ -7,7 +7,7 @@ const driverTable = require("./lib/driverTable");
 const program = require("commander");
 
 program
-  .version("0.0.7")
+  .version("0.0.8")
   .option("-d, --drivers", "Driver standings")
   .option("-c, --constructors", "Constructor standings")
   .parse(process.argv);
