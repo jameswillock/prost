@@ -10,7 +10,7 @@
 “I’m not going to leave him even a 1-meter gap.”
 ```
 
-![Tests](https://github.com/jameswillock/prost/workflows/Tests/badge.svg) [![Version](https://img.shields.io/npm/v/prost.svg)](https://www.npmjs.com/package/prost) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Depfu](https://badges.depfu.com/badges/b497d8be1cc358217997d2a3624ba0ae/overview.svg)](https://depfu.com/github/jameswillock/prost?project_id=7502) [![Coverage Status](https://coveralls.io/repos/github/jameswillock/prost/badge.svg?branch=master)](https://coveralls.io/github/jameswillock/prost?branch=master)
+![Tests](https://github.com/jameswillock/prost/workflows/Tests/badge.svg) [![Version](https://shields.io/github/v/release/jameswillock/prost?display_name=tag&sort=semver)](https://github.com/jameswillock/prost/releases) [![MIT](https://img.shields.io/github/license/jameswillock/prost.svg)](https://github.com/jameswillock/prost/blob/master/LICENSE) [![Depfu](https://badges.depfu.com/badges/b497d8be1cc358217997d2a3624ba0ae/overview.svg)](https://depfu.com/github/jameswillock/prost?project_id=7502) [![Coverage Status](https://coveralls.io/repos/github/jameswillock/prost/badge.svg?branch=master)](https://coveralls.io/github/jameswillock/prost?branch=master)
 
 ## Description
 
