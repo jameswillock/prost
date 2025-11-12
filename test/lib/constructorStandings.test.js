@@ -1,10 +1,10 @@
-const constructorStandings = require("../../lib/constructorStandings");
-const axios = require("../../lib/axios");
-const MockAdapter = require("axios-mock-adapter");
-const chai = require("chai");
-const expect = chai.expect;
-chai.use(require("chai-as-promised"));
-const successfulResponse = require("../mocks/constructorStandings/successfulResponse");
+import constructorStandings from "../../lib/constructorStandings.js";
+import axios from "../../lib/axios.js";
+import MockAdapter from "axios-mock-adapter";
+import { use, expect } from 'chai';
+import chaiAsPromised from 'chai-as-promised';
+use(chaiAsPromised);
+import successfulResponse from "../mocks/constructorStandings/successfulResponse.json" with { type: "json" };
 
 describe("constructorStandings()", () => {
   let mock;

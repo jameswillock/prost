@@ -1,10 +1,10 @@
-const cache = require("../../lib/cache");
-const chai = require("chai");
-const expect = chai.expect;
-const sinon = require("sinon");
-chai.use(require("chai-as-promised"));
-const fs = require("fs").promises;
-const crypto = require("crypto");
+import cache from "../../lib/cache.js";
+import { use, expect } from 'chai';
+import chaiAsPromised from 'chai-as-promised';
+use(chaiAsPromised);
+import sinon from 'sinon';
+import fs from 'fs/promises';
+import crypto from 'crypto';
 
 const randomKey = () => crypto.randomBytes(12).toString("hex");
 

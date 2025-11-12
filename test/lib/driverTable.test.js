@@ -1,10 +1,8 @@
-const driverTable = require("../../lib/driverTable");
-
-const chai = require("chai");
-const expect = chai.expect;
-chai.use(require("chai-as-promised"));
-
-const standings = require("../mocks/driverStandings/standings");
+import driverTable from "../../lib/driverTable.js";
+import { use, expect } from 'chai';
+import chaiAsPromised from 'chai-as-promised';
+use(chaiAsPromised);
+import standings from "../mocks/driverStandings/standings.js";
 
 describe("driverTable()", () => {
   let table;

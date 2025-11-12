@@ -1,10 +1,8 @@
-const driverTable = require("../../lib/constructorTable");
-
-const chai = require("chai");
-const expect = chai.expect;
-chai.use(require("chai-as-promised"));
-
-const standings = require("../mocks/constructorStandings/standings");
+import driverTable from "../../lib/constructorTable.js";
+import { use, expect } from 'chai';
+import chaiAsPromised from 'chai-as-promised';
+use(chaiAsPromised);
+import standings from "../mocks/constructorStandings/standings.js";
 
 describe("constructorTable()", () => {
   let table;
