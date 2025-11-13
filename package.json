@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "prost": "./index.js",
-    "test": "c8 --all mocha test/lib/**.test.js",
+    "test": "c8 --all --reporter lcovonly mocha test/lib/**.test.js",
     "prettier": "prettier . --check !.nyc_output !.cache",
     "lint": "eslint ."
   },
