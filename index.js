@@ -23,10 +23,9 @@ program
   if (program.opts().constructors) {
     const standings = await constructorStandings(program.opts().year)
     console.log(constructorTable(standings))
-  } else {
+  }
+  else {
     const standings = await driverStandings(program.opts().year)
     console.log(driverTable(standings))
   }
-
-
 })()
