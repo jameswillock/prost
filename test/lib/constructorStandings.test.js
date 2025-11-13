@@ -5,19 +5,29 @@ import { use, expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 use(chaiAsPromised);
 import successfulResponse from "../mocks/constructorStandings/successfulResponse.json" with { type: "json" };
+import fs from 'fs/promises';
 
 describe("constructorStandings()", () => {
   let mock;
   before(() => (mock = new MockAdapter(axios)));
   after(() => mock.restore());
 
+  // Clear cache before each context to ensure test isolation
+  beforeEach(async () => {
+    try {
+      await fs.unlink('.cache/prost-constructors.json');
+    } catch (e) {
+      // Ignore if file doesn't exist
+    }
+  });
+
   context("when API is unavailable", () => {
     before(() => {
-      mock.onGet("constructorstandings.json").reply(500, "Error");
+      mock.onGet("2019/constructorstandings/").reply(500, "Error");
     });
 
     it("Throws an error", async () => {
-      await expect(constructorStandings()).to.be.rejectedWith(
+      await expect(constructorStandings(2019)).to.be.rejectedWith(
         "Request failed with status code 500"
       );
     });
@@ -27,8 +37,8 @@ describe("constructorStandings()", () => {
     let standings;
 
     before(async () => {
-      mock.onGet("constructorstandings.json").reply(200, successfulResponse);
-      standings = await constructorStandings();
+      mock.onGet("2019/constructorstandings/").reply(200, successfulResponse);
+      standings = await constructorStandings(2019);
     });
 
     it("Return an object", () => {

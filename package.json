@@ -3,6 +3,7 @@
   "version": "0.0.8",
   "description": "Formula 1 statistics on the command line",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "prost": "./index.js",
     "test": "nyc --reporter=lcovonly --cache=false mocha --recursive",
@@ -20,10 +21,10 @@
   },
   "dependencies": {
     "axios": "^1.13.2",
-    "cache-manager": "^7.2.4",
-    "cache-manager-fs-hash": "3.0.0",
     "cli-table3": "^0.6.5",
-    "commander": "^14.0.2"
+    "commander": "^14.0.2",
+    "keyv": "^5.5.4",
+    "keyv-file": "^5.3.3"
   },
   "devDependencies": {
     "axios-mock-adapter": "^2.1.0",

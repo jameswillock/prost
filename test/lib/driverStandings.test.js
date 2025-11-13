@@ -5,17 +5,28 @@ import { use, expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 use(chaiAsPromised);
 import successfulResponse from "../mocks/driverStandings/successfulResponse.json" with { type: "json" };
+import fs from 'fs/promises';
 
 describe("driverStandings()", () => {
   let mock;
   before(() => (mock = new MockAdapter(axios)));
   after(() => mock.restore());
 
+  // Clear cache before each context to ensure test isolation
+  beforeEach(async () => {
+    try {
+      await fs.unlink('.cache/prost-drivers.json');
+    } catch (e) {
+      // Ignore if file doesn't exist
+    }
+  });
+
   context("when API is unavailable", () => {
-    before(() => mock.onGet("driverstandings.json").reply(500, "Error"));
+    before(() => mock.onGet("2019/driverstandings/").reply(500, "Error"));
 
     it("Throws an error", async () => {
-      await expect(driverStandings()).to.be.rejectedWith(
+
+      await expect(driverStandings(2019)).to.be.rejectedWith(
         "Request failed with status code 500"
       );
     });
@@ -25,8 +36,8 @@ describe("driverStandings()", () => {
     let standings;
 
     before(async () => {
-      mock.onGet("driverstandings.json").reply(200, successfulResponse);
-      standings = await driverStandings();
+      mock.onGet("2019/driverstandings/").reply(200, successfulResponse);
+      standings = await driverStandings(2019);
     });
 
     it("Return an object", () => {

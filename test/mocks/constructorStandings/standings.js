@@ -75,4 +75,4 @@ const standings = {
   round: 1,
 };
 
-module.exports = standings;
+export default standings;
