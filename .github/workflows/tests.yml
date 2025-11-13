@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [24.x, 25.x]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -20,22 +20,20 @@ jobs:
       - name: Lint
         run: npm run lint
       - name: Run tests
-        run: npm test
+        run: npm run test
         env:
           TEST_MODE: true
-      - name: Coveralls (parallel)
-        uses: coverallsapp/github-action@v1.1.1
-        env:
-          COVERALLS_FLAG_NAME: run-${{ matrix.test_number }}
+      - name: Coveralls Parallel
+        uses: coverallsapp/github-action@v2
         with:
-          github-token: ${{ secrets.github_token }}
+          flag-name: run-${{ join(matrix.*, '-') }}
           parallel: true
   finish:
     needs: test
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
-      - name: Coveralls finished
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.github_token }}
-          parallel-finished: true
+    - name: Coveralls Finished
+      uses: coverallsapp/github-action@v2
+      with:
+        parallel-finished: true

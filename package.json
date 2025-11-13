@@ -1,12 +1,12 @@
 {
   "name": "@jameswillock/prost",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Formula 1 statistics on the command line",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "prost": "./index.js",
-    "test": "nyc --reporter=lcovonly --cache=false mocha --recursive",
-    "prettier": "prettier . --check !.nyc_output !.cache",
+    "test": "c8 --all --reporter lcovonly --reporter text mocha test/lib/**.test.js",
     "lint": "eslint ."
   },
   "keywords": [
@@ -19,24 +19,21 @@
     "prost": "./index.js"
   },
   "dependencies": {
-    "axios": "^0.27.1",
-    "cache-manager": "^3.6.1",
-    "cache-manager-fs-hash": "1.0.0",
-    "cli-table3": "^0.6.2",
-    "commander": "^9.2.0",
-    "npm": "^8.7.0"
+    "axios": "^1.13.2",
+    "c8": "^10.1.3",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.2",
+    "keyv": "^5.5.4",
+    "keyv-file": "^5.3.3"
   },
   "devDependencies": {
-    "axios-mock-adapter": "^1.20.0",
-    "chai": "^4.3.6",
-    "chai-as-promised": "^7.1.1",
-    "eslint": "^8.14.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "mocha": "^9.2.2",
-    "nyc": "^15.1.0",
-    "prettier": "^2.6.2",
-    "sinon": "^13.0.2"
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "axios-mock-adapter": "^2.1.0",
+    "chai": "^6.2.1",
+    "chai-as-promised": "^8.0.2",
+    "eslint": "^9.39.1",
+    "mocha": "^11.7.5",
+    "mocha-lcov-reporter": "^1.3.0"
   },
   "repository": {
     "type": "git",

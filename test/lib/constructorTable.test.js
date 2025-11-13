@@ -1,44 +1,42 @@
-const driverTable = require("../../lib/constructorTable");
+import driverTable from '../../lib/constructorTable.js'
+import { use, expect } from 'chai'
+import chaiAsPromised from 'chai-as-promised'
+use(chaiAsPromised)
+import standings from '../mocks/constructorStandings/standings.js'
 
-const chai = require("chai");
-const expect = chai.expect;
-chai.use(require("chai-as-promised"));
+describe('constructorTable()', () => {
+  let table
 
-const standings = require("../mocks/constructorStandings/standings");
+  before(() => (table = driverTable(standings)))
 
-describe("constructorTable()", () => {
-  let table;
+  it('Renders a string', () => {
+    expect(table).to.be.a('string')
+  })
 
-  before(() => (table = driverTable(standings)));
+  it('Contains the title', () => {
+    expect(table).to.include('Formula 1 2019: Round 1')
+  })
 
-  it("Renders a string", () => {
-    expect(table).to.be.a("string");
-  });
+  it('Contains the headers', () => {
+    ['#', 'Team', 'Wins', 'Points'].forEach((header) => {
+      expect(table).to.include(header)
+    })
+  })
 
-  it("Contains the title", () => {
-    expect(table).to.include("Formula 1 2019: Round 1");
-  });
-
-  it("Contains the headers", () => {
-    ["#", "Team", "Wins", "Points"].forEach((header) => {
-      expect(table).to.include(header);
-    });
-  });
-
-  it("Contains the teams", () => {
+  it('Contains the teams', () => {
     [
-      "Mercedes",
-      "Ferrari",
-      "Red Bull",
-      "Haas F1 Team",
-      "Renault",
-      "Alfa Romeo",
-      "Racing Point",
-      "Toro Rosso",
-      "McLaren",
-      "Williams",
+      'Mercedes',
+      'Ferrari',
+      'Red Bull',
+      'Haas F1 Team',
+      'Renault',
+      'Alfa Romeo',
+      'Racing Point',
+      'Toro Rosso',
+      'McLaren',
+      'Williams',
     ].forEach((driver) => {
-      expect(table).to.include(driver);
-    });
-  });
-});
+      expect(table).to.include(driver)
+    })
+  })
+})
