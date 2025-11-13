@@ -20,12 +20,13 @@ program
   .parse(process.argv);
 
 (async () => {
-  if (program.drivers || (!program.drivers && !program.constructors)) {
+  if (program.opts().constructors) {
+    const standings = await constructorStandings(program.opts().year)
+    console.log(constructorTable(standings))
+  } else {
     const standings = await driverStandings(program.opts().year)
     console.log(driverTable(standings))
   }
 
-  if (program.constructors) {
-    console.log(constructorTable(await constructorStandings(program.opts().year)))
-  }
+
 })()
