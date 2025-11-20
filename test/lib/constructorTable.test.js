@@ -1,4 +1,4 @@
-import driverTable from '../../lib/constructorTable.js'
+import driverTable from '../../lib/constructorTable.mjs'
 import { use, expect } from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 use(chaiAsPromised)

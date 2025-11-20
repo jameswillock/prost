@@ -1,9 +1,9 @@
 #! /usr/bin/env node
 
-import constructorStandings from './lib/constructorStandings.js'
-import constructorTable from './lib/constructorTable.js'
-import driverStandings from './lib/driverStandings.js'
-import driverTable from './lib/driverTable.js'
+import constructorStandings from './lib/constructorStandings.mjs'
+import constructorTable from './lib/constructorTable.mjs'
+import driverStandings from './lib/driverStandings.mjs'
+import driverTable from './lib/driverTable.mjs'
 import { Command } from 'commander'
 
 const program = new Command()
