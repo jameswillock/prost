@@ -1,6 +1,6 @@
 {
   "name": "prost",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Formula 1 statistics on the command line",
   "main": "index.js",
   "type": "module",
