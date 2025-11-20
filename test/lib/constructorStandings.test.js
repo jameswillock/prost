@@ -1,5 +1,5 @@
-import constructorStandings from '../../lib/constructorStandings.js'
-import axios from '../../lib/axios.js'
+import constructorStandings from '../../lib/constructorStandings.mjs'
+import axios from '../../lib/axios.mjs'
 import MockAdapter from 'axios-mock-adapter'
 import { use, expect } from 'chai'
 import chaiAsPromised from 'chai-as-promised'

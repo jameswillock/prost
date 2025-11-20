@@ -1,5 +1,5 @@
-import driverStandings from '../../lib/driverStandings.js'
-import axios from '../../lib/axios.js'
+import driverStandings from '../../lib/driverStandings.mjs'
+import axios from '../../lib/axios.mjs'
 import MockAdapter from 'axios-mock-adapter'
 import { use, expect } from 'chai'
 import chaiAsPromised from 'chai-as-promised'
