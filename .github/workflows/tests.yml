@@ -31,6 +31,8 @@ jobs:
           flag-name: run-${{ join(matrix.*, '-') }}
           parallel: true
   finish:
+    permissions:
+      contents: read
     needs: test
     if: ${{ always() }}
     runs-on: ubuntu-latest
