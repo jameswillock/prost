@@ -1,5 +1,5 @@
 {
-  "name": "@jameswillock/prost",
+  "name": "prost",
   "version": "0.0.9",
   "description": "Formula 1 statistics on the command line",
   "main": "index.js",
@@ -40,6 +40,6 @@
     "url": "git://github.com/jameswillock/prost.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   }
 }
