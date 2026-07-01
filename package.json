@@ -21,7 +21,7 @@
     "prost": "./index.mjs"
   },
   "dependencies": {
-    "@yao-pkg/pkg": "^6.10.1",
+    "@yao-pkg/pkg": "^6.21.0",
     "axios": "^1.13.2",
     "c8": "^10.1.3",
     "cli-table3": "^0.6.5",
